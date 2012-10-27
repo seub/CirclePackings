@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style>
+			*
+			{
+				font-family: Georgia, "Trebuchet MS";
+			}
+			
+			a:link
+			{
+				color:blue;
+				text-decoration:none;
+				background-color:none;
+			}
+
+			a:visited
+			{
+				color:blue;
+				text-decoration:none;
+				background-color:none;
+			}
+
+			a:hover 
+			{
+				color:red;
+				text-decoration:none;
+				background-color:none;
+			}
+
+			a:active 
+			{
+				color:red;
+				text-decoration:none;
+				background-color:none;
+			}
+							
+			p
+			{
+    				font-size: 1.1em;
+				margin-left: 20px;
+				margin-top: 15px;
+				margin-right:10px;
+				margin-bottom:15px;
+			}
+
+			ul
+			{
+    				font-size: 1.1em;
+				margin-left: 20px;
+				margin-top: 10px;
+				margin-right:10px;
+				margin-bottom:10px;
+			}
+
+			h1
+			{
+				font-family: Verdana;
+    				font-size: 1.3em;
+				font-weight: bold;
+				margin-top: 70px;
+				margin-left: 10px;
+				margin-right:10px;
+				margin-bottom: 30px;
+			}
+
+			h2
+			{
+				font-family: Verdana;
+    				font-size: 1.2em;
+				font-weight: bold;
+				margin-top: 10px;
+				margin-left: 20px;
+				margin-right:10px;
+				margin-bottom: 15px;
+			}
+
+			h3
+			{
+    				font-size: 1.1em;
+				font-weight: bold;
+				margin-top: 40px;
+				margin-left: 20px;
+				margin-right:10px;
+				margin-bottom: 20px;
+			}
+
+			h4
+			{
+    				font-size: 1.1em;
+				font-style: italic;
+				margin-top: 30px;
+				margin-left: 17px;
+				margin-right:10px;
+				margin-bottom: 15px;
+			}
+
+
+			.toc
+			{
+    				font-size: 1.1em;
+				font-weight: bold;
+				margin-top: 10px;
+				margin-left: 20px;
+				margin-right:10px;
+				margin-bottom: 10px;
+			}
+
+			.float_right
+			{
+				float:right;
+			}
+			
+			.pic
+			{
+				margin: 40px auto;
+				display:block;
+			}
+			
+			.code
+			 {
+				font-family: "Courier";
+				margin-left:50px;
+				margin-top:10px;
+				margin-bottom:10px;
+				margin-right:10px;
+				background-color:black;
+				color:white;
+			 }
+
+			.in_code
+			 {
+				font-family: "Courier";
+				background-color:black;
+				color:white;
+			 }
+
+
+
+
+        	</style>
+		<title>Table of Contents</title>
+	</head>
+
+	<body>
+    			
+		<img src="../images/icon.png" class="float_right" alt="icon" />
+		
+		<h1> Table of Contents </h1>
+
+            		<ul>
+				<h2> <a href="#install"> Installation </a> </h2>
+                		<h2> <a href="#getting_started"> Getting Started </a> </h2>
+				<h2> <a href="#draw_graph_mode"> Draw Graph Mode </a> </h2>
+				<h2> <a href="#draw_curve_mode"> Draw Curve Mode </a> </h2>
+				<h2> <a href="#draw_two_curves_mode"> Draw Two Curves Mode </a> </h2>
+				<h2> <a href="#save"> Save/Open and Print </a> </h2>
+				<h2> <a href="#controls"> Mouse and Keyboard Controls </a> </h2>
+				<h2> <a href="#troubleshooting"> Troubleshooting </a> </h2>
+				<h2> <a href="#maths"> About the maths </a> </h2>
+				<h2> <a href="#program"> About the program </a> </h2>
+				<h2> <a href="#about_us"> About us </a> </h2>
+           		</ul>
+
+
+		<br>
+
+		
+
+
+		<h1 id="install"> Installation </h1>
+
+		<h3> Window users: </h3>
+
+		<ol>
+		<li> Save all your data on an external drive. </li>
+		<li> Download the latest version of Linux <a href="http://www.ubuntu.com/">Ubuntu</a> and burn it to a CD. </li>
+		<li> Reboot with the CD in the drive and follow the instructions. </li>
+		<li> Scroll down to the "Linux users" section. </li>
+		</ol>
+
+		<p> Alternatively, you may download <a href="http://brice.loustau.free.fr/CirclePackingsSetup.exe">this setup file</a> and run it to install
+		(a slower version of) the application on your system. </p>
+
+		<h3> Mac users: </h3>
+
+		<p> Download <a href="http://brice.loustau.free.fr/CirclePackings.app">this app file</a> and move it to your applications directory. </p>
+
+		<h3> Linux (or UNIX) users: </h3>
+
+		<p> You may either install a package or compile the application from
+		the sources. Note that installing the package will only work on Debian-based distributions (Debian, Ubuntu, Mint...). </p>
+
+		<h4> Install the package (Debian-based distributions): </h4>
+		<p> Download and install <a href="http://brice.loustau.free.fr/CirclePackings-32.deb">this package</a> (32 bits, works on all systems)
+		or <a href="http://brice.loustau.free.fr/CirclePackings-64.deb">this package</a> (64 bits systems only). </p>
+
+		<p> Installing the package can be done by 
+		opening a terminal, stepping into the folder containing the package (using <em>cd</em>) and typing:
+		<div class= "code">
+		sudo dpkg -i CirclePackings.deb
+		</div> </p>
+		<p> You will be prompted to install <strong>libqt4-dev</strong> if not already installed on your system.
+		This can be done by typing:
+		<div class= "code">
+		sudo apt-get install libqt4-dev
+		</div></p>
+
+		<h4> Compile from the sources: </h4>
+		<ol>
+		<li> Install the Qt framework on your system (if not already installed). You probably want to do a quick web search to determine how to do that. 
+		On Debian-based
+		distributions, this is done by installing the package <strong>libqt4-dev</strong>. </li>
+		<li> Download
+		<a href="http://brice.loustau.free.fr/CirclePackings.tar.gz">this compressed folder</a> and extract it somewhere in your hard disk. </li>
+		<li> Open a terminal, <em>cd</em> into that folder and type:
+		<div class = "code">
+		qmake CirclePackings.pro <br>
+		qmake <br>
+		make
+		</div> </p>
+
+		 <p> <em> Note: The last step may take a minute. You may type instead <span class = "in_code"> make -j N</span> where <em>N</em> is 
+		the number of processor cores that you have to speed things up. </em> </p>
+		</li>
+		<li> You're done! An executable file <em>CirclePackings</em> was generated. Double-click on it or run it from the terminal:
+		<span class = "in_code"> ./CirclePackings</span></li>
+		<li> Creating a shortcut, setting the application's icon, etc: I'm afraid that's out of our scope. You need to find out how to do this on your system
+		by yourself. For example, you can use <a href="http://xiaonosekai.wordpress.com/2012/06/16/how-to-create-launcher-for-the-dash-of-unity/">this guide</a>
+		for Ubuntu with unity. </ol>
+
+
+		<h1 id="getting_started"> Getting Started </h1>
+
+		<p>
+		The program's main window consists of a menu and two canvases that are used to draw or show graphical objects. 
+		Also notice the status bar at the bottom (it gives various indications) and the application's menu (usually on top
+		of the application's main window, depending on your operating system).
+
+		<p> <center> <img class="pic" src="../images/pic1.png" /> </center> </p>
+		<p> We tried to make this program easy and intuitive to use, so hopefully
+		it will only take you a couple minutes to get acquainted to it. In fact, this help file is hardly necessary to read. You might want to quickly check
+		the <a href=#controls> controls section </a> though, since you won't be given much information about that otherwise. </p>
+
+		<h3> What does this program do? </h3>
+		<p> The core algorithm of the program computes a circle packing in the plane associated to an abstract planar graph (this algorithm is due
+		to mathematicians C. R. Collins and K. Stephenson). We use circle packings to approximate conformal mappings between simply connected domains in the 			plane (following Thurston's idea). If you have no idea what all this means, 
+		you can either check the <a href=#maths>maths section</a> or try to guess from using the program. 
+		</p>
+
+		<p> To get started, simply choose a "mode" from the top combo box in the menu. </p>
+
+
+
+
+
+
+
+
+
+
+
+		<h1 id="draw_graph_mode"> Draw Graph Mode </h1>
+		<p>
+		Once you have chosen "Draw Graph" mode, you can either manually draw a planar graph or select a sample graph from the combo box in the menu.
+		After you've done that, you can click the "Compute" button to compute and show the circle packing associated to that graph.
+		</p>
+
+		<h3> How do I draw a graph? </h3>
+		<p> Start clicking on the left canvas to add vertices. You can then add edges between vertices by
+		choosing "Add edges" from the radio box in the menu. In order to do that, select a vertex by clicking on it, and click on another one to draw an edge. 			Note that you won't be able to draw edges that intersect. You may go back to adding vertices and so forth. You can also delete vertices by clicking them 			again
+		or edges by unselecting them. At any point, click the "Complete" button to finish and complete your graph into a maximal planar graph (this
+		also prepares it for computation).
+
+		<p> If you choose a sample graph, you may change some size parameter(s) in the menu.</p>
+
+		<h3> I'm done entering a graph, what now? </h3>
+		<p> Click the "Compute button" to proceed. You can check the "Show live" box to see the computation in real time (but it's likely to be almost
+		instantaneous for small graphs). You will then see the output circle packing in the right canvas. Now you're pretty much done!
+		You can move the circle packing around by click-and-dragging it, you can also zoom in and out and shift the view, see the <a href=#controls>controls
+		section</a> for details.</p>
+
+		<p>  <center> <img class="pic" src="../images/pic2.png" /> </center> </p>
+		<p> Choose "Reset" from the menu to start over again or choose another mode. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<h1 id="draw_curve_mode"> Draw Curve Mode </h1>
+
+		<p> In this mode, you can draw a curve (manually or selecting a sample curve from the menu), and compute circle packings associated to it. Notice
+		that regular hexagonal tiling points are drawn on the left canvas' background. When you draw a closed curve, the program will show an "input" circle 			packing based on that tiling in the region inside the curve. This circle packing mathematically defines a maximal abstract planar graph
+		(by "adding a vertex at infinity"). If the graph is valid, you can compute and show the "output" circle packing associated to that graph.
+		</p>
+
+		<p> <center> <img class="pic" src="../images/pic3.png" />  </center> </p>
+
+		<h3> How to draw a curve </h3>
+		<p> Start clicking on the left canvas to add node points. As soon as you have at least three nodes, you may click on the first node again
+		in order to close the curve.
+		You can click-and-drag the nodes to move them around. You can also check the "smooth" box from the menu to smooth the curve. If you do that,
+		you'll see tangent control points appear, you can move those around as well. When you're done drawing the curve, you'll see a message in the status
+		bar telling you whether the graph is ready for computation.
+
+		<p> You can also select a sample curve from the menu. If you do that, there may be some parameter in the menu that you can change (the number
+		of sides of a polygon, for instance). You will still have one or more node control points on the curve that you can click to alter the curve. </p>
+
+		<p> You can change the tiling size from the spin box in the menu. The smaller the tiling is, the better the circle packing will approximate
+		the region inside the curve, but the longer the computation will take.</p>
+
+		<h3> When you're done drawing a curve </h3>
+		<p> Click on the "Compute" button to proceed (you won't be able to do that if the graph is not valid for computation, when that happens, try to 
+		alter the curve	until it is good to go). You can check the "Show live" box if you want to see result of the computation in real time (this could
+		slow down the computation more or less significantly depending on your hardware). </p>
+
+		<p> When the computation is over, you'll see the output circle packing in the right canvas. You can move it around by click-and-dragging it, you can also 			zoom in and out and shift the view, see the <a href=#controls>controls section</a> for details.</p>
+
+		<p>The default coloring of the circle packings is "Plain" but that can be changed from the menu.</p>
+
+
+
+
+
+
+
+
+		
+		<h1 id="draw_two_curves_mode"> Draw Two Curves Mode </h1>
+
+		<p> In this mode, you can draw a curve in each canvas (manually or selecting a sample curve from the menu), and compute an approximation
+		of the conformal mapping between the regions inside the curves. </p>
+
+		<p> <center> <img class="pic" src="../images/pic4.png" />  </center> </p>
+
+		<p> Drawing each curve is done the same way as in the <a href=#draw_curve_mode>Draw Curve mode</a>. The only difference is that 
+		the program will not show you circle packings inside the curves but triangulations associated to them. </p>
+
+		<p> When you're done, if both the curves are valid, you can click the "Compute" button to proceed. You will then see an approximation of the conformal 			mapping (rather, how it sends the triangulation on the left to the right side). You can check the "inverse" box to show the inverse mapping.
+		You can move the output triangulation around by click-and-dragging it, you can also zoom in and out and shift the view, 
+		see the <a href=#controls>controls section</a> for details.</p>
+
+		<p>The default coloring of the triangulations is "Squares" but that can be changed from the menu.</p>
+
+		<h3> Image mode </h3>
+
+		<p> Instead of drawing plain triangles, you can upload an image from your hard drive and see how the conformal mapping deforms it. In order to do that,
+		choose "Set image..." from the window's top menu (or press Ctrl+I) and choose an image from your personal files. Once an image is set, select "Image" as 			a coloring (you can also select the "Image" coloring right away, and if you haven't set an image, you will be asked to do so). You can change the image
+		you've set at any moment.
+
+		<p> <center> <img class="pic" src="../images/pic5.png" />  </center> </p>
+
+
+
+		<h1 id="save"> Save/Open and Print </h1>
+
+		<p> At any moment you can save the state of the program in a "CP file", and then restore this configuration later. You can also print either of your
+		canvases as an image file. Just select whichever you want to do from the window's top menu 
+		(or use a <a href = #controls>keyboard shortcut</a>) and follow the instructions. </p>
+
+		<p> Note that when you use the save/open feature, the program won't save any results of computations, so you may need to make it compute again
+		after you restore your state. Also, it won't remember which image file you have set (if you've done that), so you may also want to set an image file
+		again when you restore.</p>
+
+
+
+
+
+
+
+
+
+
+
+		<h1 id="controls"> Mouse and keyboard controls </h1>
+
+		<h3> Zoom in / out </h3>
+
+		<p> Using the keyboard : <em> +/- </em> keys. 
+		<br> Using the mouse: wheel (this will zoom in/out on the mouse cursor). </p>
+
+		<p> Note: you won't be able to zoom out of the original area on an input canvas (where you draw a graph or a curve). </p>
+
+		<h3> Shift </h3>
+
+		<p> Using the keyboard : arrow keys. 
+		<br> Using the mouse: press and hold <em> Maj </em>, then click and drag. </p>
+
+		<p> Note: you won't be able to shift out of the original area
+		on an input canvas. </p>
+
+		<h3> Move output circle packing around </h3>
+
+		<p> Once you have computed, you get an output circle packing (mode "Draw Graph", "Draw Curve") or triangulation (mode "Draw Two Curves").
+		To move it around, click-and-drag it (this applies non-elliptic M&ouml;bius transformations). To apply elliptics ("rotations"),
+		press and hold <em> Ctrl </em> while "m&ouml;biusing". </p>
+
+		<h3> Keyboard shortcuts </h3>
+
+		<p> These are shown in the window's top menus. Let's recap them here: </p>
+
+		<p>
+		<em> Ctrl + S </em>: Save <br>
+		<em> Ctrl + Maj + S </em>: Save as... <br>
+		<em> Ctrl + O </em>: Open... <br>
+		<em> Ctrl + P </em>: Print... <br>
+		<em> Ctrl + Q </em>: Exit <br>
+		<em> Ctrl + I </em>: Set image... <br>
+		<em> F1 </em>: Help <br>
+		</p>
+
+		<h1 id="troubleshooting"> Troubleshooting </h1>
+
+		<p> If you don't find an answer to your problem here, please send <a href=#about_us>us</a> an email. </p>
+
+		<h3> I noticed a bug / An error occurred / The program crashed </h3>
+		<p> Sorry about that! We tried to eradicate all the bugs but we probably have left a few. If you want to help us fix it, you can tell 
+		<a href=#about_us>us</a>
+		what happened. </p>
+		
+		<h3> Why does the program think my curve is not good for computation? I think it is! </h3>
+		<p> No, it's probably not. If you want to cut out a simply connected domain, your curve should be non self-intersecting, but that's not enough 
+		because of the
+		tiling precision. If your curve is not self-intersecting and still not valid, either: </p>
+		<ul>
+		<li> There are zero or one circles in your packing, </li>
+		<li> Your circle packing is disconnected (there are at least two disconnected bunches of circles), </li>
+		<li> Your circle packing is connected, but can be disconnected by removing just one circle. </li>
+		<li> Your circle packing is not simply connected (there is one -or more- "holes" in it which should be filled with circles) </li>
+		</ul>
+		<p> Note : in the "Draw Two Curves" mode, the circle packings are not shown (the triangulations are) but you should still be able to see the problem
+		on the triangles.</p>
+
+		
+		<h3> Convergence and speed </h3>
+		<p> The algorithm can have a hard time numerically converging. You'll notice from experimenting that the more your curve "doesn't look like a circle",
+		the harder it gets for the algorithm to converge. Luckily, it turns out that the conformal mapping is not that interesting to look at for
+		very fancy domains anyway (one that looks like a thickened spiral for example). </p>
+
+		<p> If the computation doesn't seem to go anywhere, just clicking the "Stop" button should do. The program will still show you the result of its
+		computations, you so might see some total nonsense. </p>
+
+		<p> Note that the speed of computation will depend on your hardware (obvisously). In particular, having several processor cores will definitely
+		speed it up (because the program launches two to six threads depending on the mode). You could try the following speed test: choose 
+		"Draw Two Curves mode", and select "Rectangle" for each curve. Set the tiling size
+		to 3 and click on the "Compute" button. Here are sample performances: on an "old" laptop with two cores @1.7Ghz, it took ~140s, compared to ~17.5s on 
+		a recent laptop with 8 cores @2.2Ghz. </p>
+
+		<h3> The interface is slow and lagging / freezing... </h3>
+		<p> We haven't tried the program on many computers yet, but it's possible that some features are demanding in terms of performances, especially if 
+		you go down in tiling size (say less than 5), so that may happen if you have old hardware. If that's not the case, please tell <a href=#about_usg>us</a>
+		about it. </p>
+
+
+
+
+
+
+		<h1 id="maths"> About the maths </h1>
+
+		<p> We'll keep it short here, additional mathematical material and references can be found in the few links we provide in the following paragraphs.
+		You can also directly <a href=#about_us>ask us</a> if you have any questions, we'll be happy to answer.</p>
+
+
+		<img src="../images/pic6.png" class="float_right" />
+
+		<p> A circle packing is a bunch of non-overlapping disks in the plane (or more generally, on any surface so long as the notion of "circle" makes sense). 
+		The circles are allowed to be tangent to each other. So a circle packing looks pretty much like this: (see picture on the right)
+
+		<p>When two circles are tangent, they are considered neighbors. One can thus associate a graph
+		to any circle packing: each circle represents a vertex, tangency represents an edge. The Koebe - Andreev - Thurston "circle packing theorem" states that 			the converse is true: any triangulated planar graph is realized by 			
+		a (pretty much) unique circle packing. We refer to the articles Wikipedia articles 
+		<a href="http://en.wikipedia.org/wiki/Circle_packing"> Circle packing </a> and <a href="http://en.wikipedia.org/wiki/Circle_packing_theorem"> Circle 			packing theorem</a> as a starting point to learn more. </p>
+
+		<p> The core algorithm of this program takes an abstract graph as input and computes the circle packing associated to it. This simple and powerful 			algorithm is due to 			
+		mathematicians Charles R. Collins and Ken Stephenson. Stephenson also has designed a program that revolves around circle packings ("CirclePack"). 
+		You will find his software as well as a lot of interesting mathematical material
+		on his <a href="http://www.math.utk.edu/~kens/">webpage</a>.</p>
+
+		<p> Now, a few words about conformal mappings. Those are mappings between domains that preserve (oriented) angles, so they "sort of" preserve shapes. 
+		Being conformal is a very strong requirement. In the context of domains in the plane
+		(or more generally Riemann surfaces), conformality is equivalent to biholomorphicity. The amazing Riemann mapping theorem states that there exists
+		a unique conformal mapping between any two simply connected domains in the plane. Note : unicity is up to M&ouml;bius transformations (precisely what 			you do when you "move output around by click-and-dragging it" in our program), "simply connected" means "without holes inside". This theorem was 			generalized as the Uniformization 
+		theorem for Riemann surfaces. Check the Wikipedia articles
+		<a href="http://en.wikipedia.org/wiki/Conformal_map"> Conformal map </a> and
+		<a href="http://en.wikipedia.org/wiki/Riemann_mapping_theorem">Riemann mapping theorem</a> for more information and references. </p>
+
+		<p> One can check that being conformal means sending "very small"
+		circles to very small circles (of possibly different radii) instead of small ellipses as any regular map would. In this sense
+		it might not be too surprising that tiling a simply connected domain with small circles and sending them as a circle packing inside one
+		big disk (using the circle packing theorem) should approximate the Riemann mapping between the domain and the disk. This was conjectured by Thurston 
+		and proved by Rodin and Sullivan (in 1987).</p>
+
+		<p> When one knows how to compute the conformal mapping between a simply connected domain and a disk, it is not too hard to compute the conformal 			mapping between 
+		any two simply connected domains: just use composition of maps (and taking inverses). In our context, there is the question of how
+		to extrapolate a map between bunches of disks to a map between the whole domains (in order to be able to compose them). 
+		We use triangulations to do that.
+		</p>
+
+
+
+
+
+
+
+
+
+		<h1 id = "program"> About the program </h1>
+
+		<p> We started designing this program in late April 2012, working on it on and off. "Release" version 1.0 was finished in early October 2012. </p>
+
+		<p> The program is written in C++ using the <a href=#about_qt id="about_qt">Qt framework</a>. It was developed with IDE Qt Creator on our personal
+		laptops under Linux Ubuntu. </p>
+
+		<p> Although the core algorithm of the program is just the implementation of C. R. Collins and K. Stephenson's algorithm (see <a href=#maths> maths 			section</a>), we had to address a number of challenges to get things working well and optimizing speed. We might say a few words about that
+		here in the future (or not). See the <a href=#troubleshooting>Troubleshooting section</a> for a couple words about convergence and speed.
+		</p>
+
+		<p> This program is copyrighted under the <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License</a>. </p>
+
+
+
+
+
+
+		<h1 id = "about_us"> About us </h1>
+
+		<p> We are two young mathematicians: </p>
+
+		<p> Benjamin Beeker: currently an ATER at University of Orl&eacute;ans. My research interests lie in geometric group theory.<br>
+		Contact me: <a href="mailto:benjamin.beeker@gmail.com"> benjamin.beeker@gmail.com </a> </p>
+
+		<p> Brice Loustau: currently a post-doc at University Paris-Sud XI. My research interests lie in Teichm&uuml;ller theory. <br>
+		Contact me: <a href="mailto:brice.loustau@gmail.com"> brice.loustau@gmail.com </a> </p>
+
+
+		
+	</body>
+</html>
+

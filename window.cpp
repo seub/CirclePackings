@@ -1361,14 +1361,17 @@ void Window::set_canvas_delegates_show_live()
         break;
     case DRAW_GRAPH:
         delete right_canvas_->canvas_delegate_;
+        maths_contents_.show_live_cp_right_.reset_graph();
         right_canvas_->canvas_delegate_ = new Canvas_Delegate_Show_Live(right_canvas_->size_in_pixels_,
                                                                         &(maths_contents_.show_live_cp_right_));
         break;
     case DRAW_CURVE:
         delete left_canvas_->canvas_delegate_;
+        maths_contents_.show_live_cp_left_.reset_graph();
         left_canvas_->canvas_delegate_ = new Canvas_Delegate_Show_Live(left_canvas_->size_in_pixels_,
                                                                        &(maths_contents_.show_live_cp_left_));
         delete right_canvas_->canvas_delegate_;
+        maths_contents_.show_live_cp_right_.reset_graph();
         right_canvas_->canvas_delegate_ = new Canvas_Delegate_Show_Live(right_canvas_->size_in_pixels_,
                                                                         &(maths_contents_.show_live_cp_right_));
         break;

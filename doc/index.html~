@@ -186,6 +186,7 @@
 		<h3> Mac users: </h3>
 
 		<p> Download <a href="http://brice.loustau.free.fr/CirclePackings.app">this app file</a> and move it to your applications directory. </p>
+    		<p> You may also compile the application from the sources: follow the same procedure as Linux users.</p>
 
 		<h3> Linux (or UNIX) users: </h3>
 
@@ -199,7 +200,7 @@
 		<p> Installing the package can be done by 
 		opening a terminal, stepping into the folder containing the package (using <em>cd</em>) and typing:
 		<div class= "code">
-		sudo dpkg -i CirclePackings.deb
+		sudo dpkg -i CirclePackings-32.deb
 		</div> </p>
 		<p> You will be prompted to install <strong>libqt4-dev</strong> if not already installed on your system.
 		This can be done by typing:
@@ -213,15 +214,18 @@
 		On Debian-based
 		distributions, this is done by installing the package <strong>libqt4-dev</strong>. </li>
 		<li> Download
-		<a href="http://brice.loustau.free.fr/CirclePackings.tar.gz">this compressed folder</a> and extract it somewhere in your hard disk. </li>
-		<li> Open a terminal, <em>cd</em> into that folder and type:
+		<a href="http://brice.loustau.free.fr/CirclePackings.tar.gz">this compressed folder</a> and extract it somewhere in your hard disk. 
+		You may also clone the git repository: 
+		<div class= "code">
+		git clone https://github.com/seub/CirclePackings.git
+		</div></li>
+		<li> Open a terminal, <em>cd</em> into that folder and type the following two commands:
 		<div class = "code">
-		qmake CirclePackings.pro <br>
-		qmake <br>
+		qmake<br>
 		make
 		</div> </p>
-
-		 <p> <em> Note: The last step may take a minute. You may type instead <span class = "in_code"> make -j N</span> where <em>N</em> is 
+		<p> <em> Note: The <span class = "in_code"> make</span> step may take a minute. 
+		You may type instead <span class = "in_code"> make -j N</span> where <em>N</em> is 
 		the number of processor cores that you have to speed things up. </em> </p>
 		</li>
 		<li> You're done! An executable file <em>CirclePackings</em> was generated. Double-click on it or run it from the terminal:
@@ -543,8 +547,6 @@
 
 		<p> Brice Loustau: currently a post-doc at University Paris-Sud XI. My research interests lie in Teichm&uuml;ller theory. <br>
 		Contact me: <a href="mailto:brice.loustau@gmail.com"> brice.loustau@gmail.com </a> </p>
-
-
 		
 	</body>
 </html>

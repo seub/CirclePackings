@@ -94,5 +94,5 @@ SOURCES += \
 RESOURCES += \
     resources.qrc
 
-win32:RC_FILE = myapp.rc
 mac:ICON = images/icon-osx.icns
+win32:RC_FILE = CirclePackings.rc

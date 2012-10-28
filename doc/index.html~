@@ -186,8 +186,8 @@
 
 		<h3> Mac users: </h3>
 
-		<p> Download <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings.dmg">this app file</a> 
-		and move it to your applications directory. </p>
+		<p> Download <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings.dmg">this dmg file</a> 
+		and install it. </p>
     		<p> You may also compile the application from the sources: follow the same procedure as Linux users.</p>
 
 		<h3> Linux (or UNIX) users: </h3>
@@ -196,7 +196,8 @@
 		the sources. Note that installing the package will only work on Debian-based distributions (Debian, Ubuntu, Mint...). </p>
 
 		<h4> Install the package (Debian-based distributions): </h4>
-		<p> Download and install <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings-32.deb">this package</a> (32 bits, works on all systems)
+		<p> Download and install <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings-32.deb">this package</a>
+		(32 bits, works on all systems but is slower)
 		or <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings-64.deb">this package</a> (64 bits systems only). </p>
 
 		<p> Installing the package can be done by 
@@ -457,11 +458,8 @@
 		<p> If the computation doesn't seem to go anywhere, just clicking the "Stop" button should do. The program will still show you the result of its
 		computations, you so might see some total nonsense. </p>
 
-		<p> Note that the speed of computation will depend on your hardware (obvisously). In particular, having several processor cores will definitely
-		speed it up (because the program launches two to six threads depending on the mode). You could try the following speed test: choose 
-		"Draw Two Curves mode", and select "Rectangle" for each curve. Set the tiling size
-		to 3 and click on the "Compute" button. Here are sample performances: on an "old" laptop with two cores @1.7Ghz, it took ~140s, compared to ~17.5s on 
-		a recent laptop with 8 cores @2.2Ghz. </p>
+		<p> Note that the speed of computation will highly depend on your hardware (obvisously). In particular, having several logical cores will definitely
+		speed it up.</p>
 
 		<h3> The interface is slow and lagging / freezing... </h3>
 		<p> We haven't tried the program on many computers yet, but it's possible that some features are demanding in terms of performances, especially if 

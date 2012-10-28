@@ -95,4 +95,4 @@ RESOURCES += \
     resources.qrc
 
 win32:RC_FILE = myapp.rc
-unix:ICON = images/icon.ico
+mac:ICON = images/icon-osx.icns

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<style>
+			*
+			{
+				font-family: Georgia, "Trebuchet MS";
+			}
+			
+			a:link
+			{
+				color:blue;
+				text-decoration:none;
+				background-color:none;
+			}
+
+			a:visited
+			{
+				color:blue;
+				text-decoration:none;
+				background-color:none;
+			}
+
+			a:hover 
+			{
+				color:red;
+				text-decoration:none;
+				background-color:none;
+			}
+
+			a:active 
+			{
+				color:red;
+				text-decoration:none;
+				background-color:none;
+			}
+							
+			p
+			{
+    				font-size: 1.1em;
+				margin-left: 20px;
+				margin-top: 15px;
+				margin-right:10px;
+				margin-bottom:15px;
+			}
+
+			ul
+			{
+    				font-size: 1.1em;
+				margin-left: 20px;
+				margin-top: 10px;
+				margin-right:10px;
+				margin-bottom:10px;
+			}
+
+			h1
+			{
+				font-family: Verdana;
+    				font-size: 1.3em;
+				font-weight: bold;
+				margin-top: 70px;
+				margin-left: 10px;
+				margin-right:10px;
+				margin-bottom: 30px;
+			}
+
+			h2
+			{
+				font-family: Verdana;
+    				font-size: 1.2em;
+				font-weight: bold;
+				margin-top: 10px;
+				margin-left: 20px;
+				margin-right:10px;
+				margin-bottom: 15px;
+			}
+
+			h3
+			{
+    				font-size: 1.1em;
+				font-weight: bold;
+				margin-top: 40px;
+				margin-left: 20px;
+				margin-right:10px;
+				margin-bottom: 20px;
+			}
+
+			h4
+			{
+    				font-size: 1.1em;
+				font-style: italic;
+				margin-top: 30px;
+				margin-left: 17px;
+				margin-right:10px;
+				margin-bottom: 15px;
+			}
+
+
+			.toc
+			{
+    				font-size: 1.1em;
+				font-weight: bold;
+				margin-top: 10px;
+				margin-left: 20px;
+				margin-right:10px;
+				margin-bottom: 10px;
+			}
+
+			.float_right
+			{
+				float:right;
+			}
+			
+			.pic
+			{
+				margin: 40px auto;
+				display:block;
+			}
+			
+			.code
+			 {
+				font-family: "Courier";
+				margin-left:50px;
+				margin-top:10px;
+				margin-bottom:10px;
+				margin-right:10px;
+				background-color:black;
+				color:white;
+			 }
+
+			.in_code
+			 {
+				font-family: "Courier";
+				background-color:black;
+				color:white;
+			 }
+
+
+
+
+        	</style>
+		<title>Circle Packings: Install instructions</title>
+	</head>
+
+	<body>
+		<h1 id="install">Circle Packings: Install instructions</h1>
+
+		<h3> Window users: </h3>
+
+		<ol>
+		<li> Save all your data on an external drive. </li>
+		<li> Download the latest version of Linux <a href="http://www.ubuntu.com/">Ubuntu</a> and burn it to a CD. </li>
+		<li> Reboot with the CD in the drive and follow the instructions. </li>
+		<li> Scroll down to the "Linux users" section. </li>
+		</ol>
+
+		<p> Alternatively, you may download <a href="https://github.com/downloads/seub/CirclePackings/CirclePackingsSetup.exe">this setup file</a> 
+		and run it to install
+		(a slower version of) the application on your system. </p>
+
+		<h3> Mac users: </h3>
+
+		<p> Download <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings.dmg">this dmg file</a> 
+		and install it. </p>
+    		<p> You may also compile the application from the sources: follow the same procedure as Linux users.</p>
+
+		<h3> Linux (or UNIX) users: </h3>
+
+		<p> You may either install a package or compile the application from
+		the sources. Note that installing the package will only work on Debian-based distributions (Debian, Ubuntu, Mint...). </p>
+
+		<h4> Install the package (Debian-based distributions): </h4>
+		<p> Download and install <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_i386.deb">this package</a>
+		(32 bits, works on all systems but is slower)
+		or <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_amd64.deb">this package</a> (64 bits systems only). </p>
+
+		<p> To install the package, you may use your favorite package manager (such as Logitech on Ubuntu), usually
+		just double-clicking on the deb file will do. This should automatically install the dependencies.</p>
+
+		<p> Alternatively, you may open a terminal, 
+		step into the folder containing the package (using <em>cd</em>) and type:
+		<div class= "code">
+		sudo dpkg -i <em>&lt;name of the deb file&gt;</em>
+		</div></p>
+		<p> You will be prompted to install a certain number of dependencies (libraries) if they are not already installed on your system.
+		This can be done by typing:
+		<div class= "code">
+		sudo apt-get install libc6 libgcc1 libqtcore4 libqtgui4 libstdc++6
+		</div></p>
+
+		<h4> Compile from the sources: </h4>
+		<ol>
+		<li> Install the Qt framework on your system (if not already installed). You probably want to do a quick web search to determine how to do that. 
+		On Debian-based
+		distributions, this is done by installing the package <strong>libqt4-dev</strong>. </li>
+		<li> Download
+		<a href="https://github.com/downloads/seub/CirclePackings/CirclePackings.tar.gz">this compressed folder</a> and extract it somewhere in your hard disk. 
+		You may also clone the git repository: 
+		<div class= "code">
+		git clone https://github.com/seub/CirclePackings.git
+		</div></li>
+		<li> Open a terminal, <em>cd</em> into that folder and type the following two commands:
+		<div class = "code">
+		qmake<br>
+		make
+		</div> </p>
+		<p> <em> Note: The <span class = "in_code"> make</span> step may take a minute. 
+		You may type instead <span class = "in_code"> make -j N</span> where <em>N</em> is 
+		the number of processor cores that you have to speed things up. </em> </p>
+		</li>
+		<li> You're done! An executable file <em>CirclePackings</em> was generated. Double-click on it or run it from the terminal:
+		<span class = "in_code"> ./CirclePackings</span></li>
+		<li> Creating a shortcut, setting the application's icon, etc: I'm afraid that's out of our scope. You need to find out how to do this on your system
+		by yourself. For example, you can use <a href="http://xiaonosekai.wordpress.com/2012/06/16/how-to-create-launcher-for-the-dash-of-unity/">this guide</a>
+		for Ubuntu with Unity. </ol>
+
+
+		<h1 id = "about_us"> Additional information </h1>
+
+
+		<p> Circle Packings v1.0 by Benjamin Beeker and Brice Loustau. </p>
+
+		<p> This program is licensed under the <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GPL v3</a>. 
+		It is free and open source, all the sources and other files are available on gitub: 
+		<a href="https://github.com/seub/CirclePackings">https://github.com/seub/CirclePackings</a>.</p>
+
+		<p> Please refer to the help menu in the application for the full documentation. It is also available
+		<a href="http://cloud.github.com/downloads/seub/CirclePackings/index.html">here</a> (without images). </p> <br>
+
+
+		<h2> Contact: </h2>
+
+		<p> 
+		Benjamin Beeker: <a href="mailto:benjamin.beeker@gmail.com"> benjamin.beeker@gmail.com</a> <br>
+		Brice Loustau: <a href="mailto:brice.loustau@gmail.com"> brice.loustau@gmail.com </a> </p>
+		
+	</body>
+</html>
+

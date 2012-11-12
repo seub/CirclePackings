@@ -196,19 +196,22 @@
 		the sources. Note that installing the package will only work on Debian-based distributions (Debian, Ubuntu, Mint...). </p>
 
 		<h4> Install the package (Debian-based distributions): </h4>
-		<p> Download and install <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings-32.deb">this package</a>
+		<p> Download and install <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_i386.deb">this package</a>
 		(32 bits, works on all systems but is slower)
-		or <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings-64.deb">this package</a> (64 bits systems only). </p>
+		or <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_amd64.deb">this package</a> (64 bits systems only). </p>
 
-		<p> Installing the package can be done by 
-		opening a terminal, stepping into the folder containing the package (using <em>cd</em>) and typing:
+		<p> To install the package, you may use your favorite package manager (such as Logitech on Ubuntu), usually
+		just double-clicking on the deb file will do. This should automatically install the dependencies.</p>
+
+		<p> Alternatively, you may open a terminal, 
+		step into the folder containing the package (using <em>cd</em>) and type:
 		<div class= "code">
-		sudo dpkg -i CirclePackings-32.deb
-		</div> </p>
-		<p> You will be prompted to install <strong>libqt4-dev</strong> if not already installed on your system.
+		sudo dpkg -i <em>&lt;name of the deb file&gt;</em>
+		</div></p>
+		<p> You will be prompted to install a certain number of dependencies (libraries) if they are not already installed on your system.
 		This can be done by typing:
 		<div class= "code">
-		sudo apt-get install libqt4-dev
+		sudo apt-get install libc6 libgcc1 libqtcore4 libqtgui4 libstdc++6
 		</div></p>
 
 		<h4> Compile from the sources: </h4>
@@ -235,7 +238,7 @@
 		<span class = "in_code"> ./CirclePackings</span></li>
 		<li> Creating a shortcut, setting the application's icon, etc: I'm afraid that's out of our scope. You need to find out how to do this on your system
 		by yourself. For example, you can use <a href="http://xiaonosekai.wordpress.com/2012/06/16/how-to-create-launcher-for-the-dash-of-unity/">this guide</a>
-		for Ubuntu with unity. </ol>
+		for Ubuntu with Unity. </ol>
 
 
 		<h1 id="getting_started"> Getting Started </h1>

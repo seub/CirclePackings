@@ -196,19 +196,22 @@
 		the sources. Note that installing the package will only work on Debian-based distributions (Debian, Ubuntu, Mint...). </p>
 
 		<h4> Install the package (Debian-based distributions): </h4>
-		<p> Download and install <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings-32.deb">this package</a>
+		<p> Download and install <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_i386.deb">this package</a>
 		(32 bits, works on all systems but is slower)
-		or <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings-64.deb">this package</a> (64 bits systems only). </p>
+		or <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_amd64.deb">this package</a> (64 bits systems only). </p>
 
-		<p> Installing the package can be done by 
-		opening a terminal, stepping into the folder containing the package (using <em>cd</em>) and typing:
+		<p> To install the package, you may use your favorite package manager (such as Logitech on Ubuntu), usually
+		just double-clicking on the deb file will do. This should automatically install the dependencies.</p>
+
+		<p> Alternatively, you may open a terminal, 
+		step into the folder containing the package (using <em>cd</em>) and type:
 		<div class= "code">
-		sudo dpkg -i CirclePackings-32.deb
-		</div> </p>
-		<p> You will be prompted to install <strong>libqt4-dev</strong> if not already installed on your system.
+		sudo dpkg -i <em>&lt;name of the deb file&gt;</em>
+		</div></p>
+		<p> You will be prompted to install a certain number of dependencies (libraries) if they are not already installed on your system.
 		This can be done by typing:
 		<div class= "code">
-		sudo apt-get install libqt4-dev
+		sudo apt-get install libc6 libgcc1 libqtcore4 libqtgui4 libstdc++6
 		</div></p>
 
 		<h4> Compile from the sources: </h4>
@@ -458,8 +461,8 @@
 		<p> If the computation doesn't seem to go anywhere, just clicking the "Stop" button should do. The program will still show you the result of its
 		computations, you so might see some total nonsense. </p>
 
-		<p> Note that the speed of computation will highly depend on your hardware (obvisously). In particular, having several logical cores will definitely
-		speed it up.</p>
+		<p> Note that the speed of computation will depend on your hardware (obvisously). In particular, having several logical cores will definitely
+		speed it up. Also, it seems that Linux does a better job than Windows, and 64 bits systems are faster than 32 bits systems.</p>
 
 		<h3> The interface is slow and lagging / freezing... </h3>
 		<p> We haven't tried the program on many computers yet, but it's possible that some features are demanding in terms of performances, especially if 

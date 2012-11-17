@@ -1,8 +1,15 @@
 #!/bin/sh
 
+#make clean
 qmake
-make
-macdeployqt CirclePackings.app
+sudo rm -Rf CirclePackings.app
+make -j8
+sudo macdeployqt CirclePackings.app
+mkdir -p  CirclePackings.app/Contents/plugins/imageformats
+cp -R /usr/local/Cellar/qt/4.8.2/plugins/imageformats/libqjpeg.dylib CirclePackings.app/Contents/plugins/imageformats
+
+install_name_tool -change /usr/local/Cellar/qt/4.8.2/lib/QtGui.framework/Versions/4/QtGui @executable_path/../Frameworks/QtGui.framework/Versions/4/QtGui CirclePackings.app/Contents/plugins/imageformats/libqjpeg.dylib
+install_name_tool -change /usr/local/Cellar/qt/4.8.2/lib/QtCore.framework/Versions/4/QtCore @executable_path/../Frameworks/QtCore.framework/Versions/4/QtCore CirclePackings.app/Contents/plugins/imageformats/libqjpeg.dylib
 ACTUAL_SIZE=`du -sm "CirclePackings.app" | awk '{print $1}'` 
 DISK_IMAGE_SIZE=$(expr $ACTUAL_SIZE + 20)
 VOLUME_NAME="CirclePackings"

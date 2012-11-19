@@ -29,6 +29,11 @@ Circle_Packings_Application::Circle_Packings_Application(int& argc, char ** argv
     window_ = new Window;
     connect(window_, SIGNAL(destroyed()), this, SLOT(quit()));
     window_->setAttribute(Qt::WA_DeleteOnClose, true);
+    window_->restore_configuration();
+    if(argc >=2)
+    {
+        load_file(argv[1]);
+    }
     window_->show();
     /*window_->enable_canvases_updates(true);
     window_->left_canvas_->repaint();
@@ -178,6 +183,17 @@ void Circle_Packings_Application::restore_choice()
     return;
 }
 
+void Circle_Packings_Application::load_file(char * file_name)
+{
+    std::ifstream load_file(file_name, std::ios::in);
+    int load_success = window_->configuration_->read_from_file(load_file);
+    if(load_success == 0)
+    {
+        window_->configuration_->restore_configuration();
+    }
+    load_file.close();
+    return;
+}
 void Circle_Packings_Application::exit_choice()
 {
     window_->close();

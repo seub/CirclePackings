@@ -45,6 +45,7 @@ private:
     void restore_choice();
     void ham_choice();
     void ignore_choice();
+    void load_file(char* file_name);
 };
 
 #endif // CIRCLE_PACKINGS_APPLICATION_HPP

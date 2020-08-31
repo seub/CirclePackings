@@ -1,0 +1,91 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{briceslides}[2020-05-09 Brice Loustau's custom package for beamer]
+
+%--------------------------------------------------------------------------------------------------
+% Usage (example)
+%--------------------------------------------------------------------------------------------------
+
+% \documentclass{beamer}
+% \pdfoutput=1
+% \usepackage[english]{briceslides}
+
+
+
+
+%--------------------------------------------------------------------------------------------------
+% Inclusion of hyperref
+%--------------------------------------------------------------------------------------------------
+
+\RequirePackage{hyperref}
+
+%--------------------------------------------------------------------------------------------------
+% Inclusion of bricebase.sty
+%--------------------------------------------------------------------------------------------------
+
+\input{bricebase.sty}
+
+
+
+
+%--------------------------------------------------------------------------------------------------
+% Beamer settings
+%--------------------------------------------------------------------------------------------------
+
+
+% No beamer navigation symbols
+\beamertemplatenavigationsymbolsempty
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    {\large \insertframenumber/\inserttotalframenumber}
+}
+
+
+
+\definecolor{ao}{rgb}{0.0, 0.5, 0.0}
+\definecolor{slidesbgcolor}{rgb}{0.0, 0.28, 0.67}
+\setbeamercolor{palette quaternary}{fg=white,bg=slidesbgcolor}
+\setbeamercolor{titlelike}{parent=palette quaternary}
+\setbeamercolor{structure}{fg=slidesbgcolor}
+
+\setbeamertemplate{frametitle}
+{
+    \nointerlineskip
+    \begin{beamercolorbox}[sep=0.3cm,ht=1.8em,wd=\paperwidth]{frametitle}
+        \vbox{}\vskip-2ex%
+        \strut\insertframetitle\strut
+        \vskip-0.8ex%
+    \end{beamercolorbox}
+}
+
+%--------------------------------------------------------------------------------------------------
+% Other settings
+%--------------------------------------------------------------------------------------------------
+
+
+% Math font
+\usefonttheme[onlymath]{serif}
+
+%--------------------------------------------------------------------------------------------------
+% Theorem environments
+%--------------------------------------------------------------------------------------------------
+
+% Theorem-like environments (using thmtools package)
+\declaretheorem[sibling=theorem, style=remark]{remark}
+\declaretheorem[sibling=theorem]{proposition}
+\declaretheorem[sibling=theorem]{conjecture}
+\declaretheorem[sibling=theorem, style=remark]{question}
+\declaretheorem[sibling=theorem, style=remark]{construction}
+\declaretheorem[sibling=theorem, style=definition]{exercise}
+
+\declaretheorem[numbered=no, name=Theorem]{theorem*}
+\declaretheorem[numbered=no, name=Proposition]{proposition*}
+
+
+%--------------------------------------------------------------------------------------------------
+% Table of contents
+%--------------------------------------------------------------------------------------------------
+
+\setcounter{tocdepth}{2} % depth in the table of contents

@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{briceslides}[2020-05-09 Brice Loustau's custom package for beamer]
+\ProvidesPackage{briceslides}%[2020-08-31 Brice Loustau's custom package for beamer]
 
 %--------------------------------------------------------------------------------------------------
 % Usage (example)
@@ -44,11 +44,16 @@
 
 
 
+
+\definecolor{HITSSignalBlue}{rgb}{0.0, 0.309803922, 0.623529412}
 \definecolor{ao}{rgb}{0.0, 0.5, 0.0}
-\definecolor{slidesbgcolor}{rgb}{0.0, 0.28, 0.67}
+% \definecolor{slidesbgcolor}{rgb}{0.0, 0.28, 0.67}
+\definecolor{slidesbgcolor}{rgb}{0.0, 0.309803922, 0.623529412}
+
 \setbeamercolor{palette quaternary}{fg=white,bg=slidesbgcolor}
 \setbeamercolor{titlelike}{parent=palette quaternary}
 \setbeamercolor{structure}{fg=slidesbgcolor}
+
 
 \setbeamertemplate{frametitle}
 {

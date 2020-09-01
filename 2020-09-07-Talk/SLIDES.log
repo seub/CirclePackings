@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.8.20)  1 SEP 2020 00:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.8.20)  1 SEP 2020 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1439,27 +1439,27 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 
  <./images/logo1.png> <./images/CP-r.png>]) (./Outline.tex
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 39.
+(Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 39.
+(Font)              scaled to size 9.0pt on input line 37.
 LaTeX Font Info:    Trying to load font information for OT1+LinuxLibertineT-TLF
- on input line 39.
+ on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
 File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 39.
+(Font)              scaled to size 9.0pt on input line 37.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 39.
+(Font)              scaled to size 7.3pt on input line 37.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 39.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
+(Font)              scaled to size 5.5pt on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1468,7 +1468,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1478,19 +1478,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-39.
+37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-39.
+37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-39.
+37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
@@ -1498,26 +1498,16 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 <images/P1.png, id=45, 1927.2pt x 1032.85875pt>
 File: images/P1.png Graphic file (type png)
 <use images/P1.png>
-Package pdftex.def Info: images/P1.png  used on input line 39.
+Package pdftex.def Info: images/P1.png  used on input line 37.
 (pdftex.def)             Requested size: 184.0pt x 98.61116pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-
- []
-
-[2
+ [2
 
  <./images/P1.png>]
 File: images/P1.png Graphic file (type png)
 <use images/P1.png>
-Package pdftex.def Info: images/P1.png  used on input line 39.
+Package pdftex.def Info: images/P1.png  used on input line 37.
 (pdftex.def)             Requested size: 184.0pt x 98.61116pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-
- []
-
-[3
+ [3
 
 ]) (./Graphs.tex
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/it' in size <9> not ava
@@ -1815,34 +1805,42 @@ Package pdftex.def Info: images/CP8c.pdf  used on input line 71.
  [16
 
 ]
+File: images/CP8b.png Graphic file (type png)
+<use images/CP8b.png>
+Package pdftex.def Info: images/CP8b.png  used on input line 71.
+(pdftex.def)             Requested size: 120.0pt x 119.997pt.
+File: images/CP8c.pdf Graphic file (type pdf)
+<use images/CP8c.pdf>
+Package pdftex.def Info: images/CP8c.pdf  used on input line 71.
+(pdftex.def)             Requested size: 120.0pt x 119.99358pt.
+ [17
+
+]
+File: images/CP8b.png Graphic file (type png)
+<use images/CP8b.png>
+Package pdftex.def Info: images/CP8b.png  used on input line 71.
+(pdftex.def)             Requested size: 120.0pt x 119.997pt.
+File: images/CP8c.pdf Graphic file (type pdf)
+<use images/CP8c.pdf>
+Package pdftex.def Info: images/CP8c.pdf  used on input line 71.
+(pdftex.def)             Requested size: 120.0pt x 119.99358pt.
+ [18
+
+]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 97.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 97.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 97.
-<images/Screenshot1-c.png, id=167, 3468.96pt x 1682.285pt>
-File: images/Screenshot1-c.png Graphic file (type png)
-<use images/Screenshot1-c.png>
-Package pdftex.def Info: images/Screenshot1-c.png  used on input line 97.
-(pdftex.def)             Requested size: 307.28987pt x 149.01184pt.
- [17
-
- <./images/Screenshot1-c.png (PNG copy)>]
-File: images/Screenshot1-c.png Graphic file (type png)
-<use images/Screenshot1-c.png>
-Package pdftex.def Info: images/Screenshot1-c.png  used on input line 97.
-(pdftex.def)             Requested size: 307.28987pt x 149.01184pt.
- [18
-
-]
+<images/Screenshot1-c.png, id=178, 3468.96pt x 1682.285pt>
 File: images/Screenshot1-c.png Graphic file (type png)
 <use images/Screenshot1-c.png>
 Package pdftex.def Info: images/Screenshot1-c.png  used on input line 97.
 (pdftex.def)             Requested size: 307.28987pt x 149.01184pt.
  [19
 
-]
+ <./images/Screenshot1-c.png (PNG copy)>]
 File: images/Screenshot1-c.png Graphic file (type png)
 <use images/Screenshot1-c.png>
 Package pdftex.def Info: images/Screenshot1-c.png  used on input line 97.
@@ -1856,34 +1854,95 @@ Package pdftex.def Info: images/Screenshot1-c.png  used on input line 97.
 (pdftex.def)             Requested size: 307.28987pt x 149.01184pt.
  [21
 
+]
+File: images/Screenshot1-c.png Graphic file (type png)
+<use images/Screenshot1-c.png>
+Package pdftex.def Info: images/Screenshot1-c.png  used on input line 97.
+(pdftex.def)             Requested size: 307.28987pt x 149.01184pt.
+ [22
+
+]
+File: images/Screenshot1-c.png Graphic file (type png)
+<use images/Screenshot1-c.png>
+Package pdftex.def Info: images/Screenshot1-c.png  used on input line 97.
+(pdftex.def)             Requested size: 307.28987pt x 149.01184pt.
+ [23
+
 ]) (./ConformalMaps.tex
-<images/Conf1.pdf, id=195, 1840.8628pt x 861.61902pt>
+<images/Conf1.pdf, id=205, 1840.8628pt x 861.61902pt>
 File: images/Conf1.pdf Graphic file (type pdf)
 <use images/Conf1.pdf>
 Package pdftex.def Info: images/Conf1.pdf  used on input line 15.
 (pdftex.def)             Requested size: 307.28987pt x 143.81755pt.
- [22
+ [24
 
  <./images/Conf1.pdf>]
 File: images/Conf1.pdf Graphic file (type pdf)
 <use images/Conf1.pdf>
 Package pdftex.def Info: images/Conf1.pdf  used on input line 15.
 (pdftex.def)             Requested size: 307.28987pt x 143.81755pt.
- [23
-
-]
-File: images/Conf1.pdf Graphic file (type pdf)
-<use images/Conf1.pdf>
-Package pdftex.def Info: images/Conf1.pdf  used on input line 32.
-(pdftex.def)             Requested size: 307.28987pt x 143.81755pt.
- [24
-
-]
-File: images/Conf1.pdf Graphic file (type pdf)
-<use images/Conf1.pdf>
-Package pdftex.def Info: images/Conf1.pdf  used on input line 32.
-(pdftex.def)             Requested size: 307.28987pt x 143.81755pt.
  [25
+
+]
+<images/mercator3.jpg, id=223, 642.4pt x 407.5225pt>
+File: images/mercator3.jpg Graphic file (type jpg)
+<use images/mercator3.jpg>
+Package pdftex.def Info: images/mercator3.jpg  used on input line 32.
+(pdftex.def)             Requested size: 173.4013pt x 110.0pt.
+<images/david.png, id=224, 414.54875pt x 610.28pt>
+File: images/david.png Graphic file (type png)
+<use images/david.png>
+Package pdftex.def Info: images/david.png  used on input line 32.
+(pdftex.def)             Requested size: 88.30392pt x 130.0pt.
+ [26
+
+ <./images/mercator3.jpg> <./images/david.png>]
+File: images/mercator3.jpg Graphic file (type jpg)
+<use images/mercator3.jpg>
+Package pdftex.def Info: images/mercator3.jpg  used on input line 32.
+(pdftex.def)             Requested size: 173.4013pt x 110.0pt.
+File: images/david.png Graphic file (type png)
+<use images/david.png>
+Package pdftex.def Info: images/david.png  used on input line 32.
+(pdftex.def)             Requested size: 88.30392pt x 130.0pt.
+ [27
+
+]
+File: images/mercator3.jpg Graphic file (type jpg)
+<use images/mercator3.jpg>
+Package pdftex.def Info: images/mercator3.jpg  used on input line 32.
+(pdftex.def)             Requested size: 173.4013pt x 110.0pt.
+File: images/david.png Graphic file (type png)
+<use images/david.png>
+Package pdftex.def Info: images/david.png  used on input line 32.
+(pdftex.def)             Requested size: 88.30392pt x 130.0pt.
+
+[28
+
+] [29
+
+]
+<images/Riemann1.png, id=246, 2104.11093pt x 920.68968pt>
+File: images/Riemann1.png Graphic file (type png)
+<use images/Riemann1.png>
+Package pdftex.def Info: images/Riemann1.png  used on input line 51.
+(pdftex.def)             Requested size: 307.28987pt x 134.45891pt.
+ [30
+
+ <./images/Riemann1.png>]
+<images/Riemann2.png, id=253, 2104.11093pt x 920.68968pt>
+File: images/Riemann2.png Graphic file (type png)
+<use images/Riemann2.png>
+Package pdftex.def Info: images/Riemann2.png  used on input line 51.
+(pdftex.def)             Requested size: 307.28987pt x 134.45891pt.
+ [31
+
+ <./images/Riemann2.png>] [32
+
+]
+[33
+
+] [34
 
 ])
 \tf@nav=\write6
@@ -1906,11 +1965,11 @@ Package rerunfilecheck Info: File `SLIDES.out' has not changed.
 (rerunfilecheck)             Checksum: 4239335FBD04CA74E5D60619E402A4A6;243.
  ) 
 Here is how much of TeX's memory you used:
- 30472 strings out of 480906
- 586561 string characters out of 5910772
- 871540 words of memory out of 5000000
- 45145 multiletter control sequences out of 15000+600000
- 690757 words of font info for 166 fonts, out of 8000000 for 9000
+ 30529 strings out of 480906
+ 587525 string characters out of 5910772
+ 871542 words of memory out of 5000000
+ 45170 multiletter control sequences out of 15000+600000
+ 691929 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,11n,118p,785b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/us
@@ -1923,10 +1982,10 @@ ive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/newtx/txsys.pfb>
-Output written on SLIDES.pdf (25 pages, 2113484 bytes).
+Output written on SLIDES.pdf (34 pages, 7025673 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
- 40129 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 42197 words of extra memory for PDF output out of 42996 (max. 10000000)
 
